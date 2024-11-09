@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Homepage | Health & Beauty</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    
+    </head>
+    <style>
+        *{
+            font-family: cursive;
+        }
+        #home{
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.457),rgba(46, 37, 37, 0.457)), url(face\ products_images/f19.png);
+            background-size: cover;
+            border: solid 4px ;
+            background-origin: border-box;
+}
+
+        nav{
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100px;
+
+        }
+     li{
+            display: inline-block;
+            margin: 30px 20px;     
+   }
+    a{
+       text-decoration: none;
+       color: white;
+       text-transform:uppercase;
+
+   }
+   a:hover{
+       background: whitesmoke;
+       color: black;
+       border-radius: 8px;
+   }
+
+    h1{
+    font-size: 60px;
+    
+    padding: 250px 600px 0 100px;
+    color: white;
+    text-align: center;
+   }
+
+   .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-facebook, .fa-instagram {
+    padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30px;
+}
+.fa-instagram {
+  background:radial-gradient(circle at 33%  100%, #fed373 , #f15245, #d92e7f , #9b36b7 , #515ecf);
+  color: white;
+}
+
+    </style>
+    
+    <body  style="background-color:rgb(214, 207, 207);">
+        <article id="home"><u> <h1>Health and Beauty</u></h1></article>
+        <header>
+           <nav>
+                <ul align="right">
+                    <li><a href="Homepage.html">Homepage</a></li>
+                    <li><a href="AboutUs.html" >About Us</a></li>
+                    <li><a href="BodyCare1.html" >Body Care</a></li>
+                    <li><a href="FaceCare.html">Face Care</a></li>
+                    <li><a href="HairProducts.html" >Hair Care</a></li>
+                    <li><a href="Perfumes.html" >Perfumes</a></li>
+                </ul>
+                
+           </nav>
+           </header>
+           <br>
+           <video controls loop autoplay muted style="height: 100%; width: 100%;">
+            <source src="f3.mp4">
+        </video>
+        <audio controls loop autoplay style="margin-left: 500px;" src="audio.m4a"></audio>
+       
+
+
+
+        <br><br><hr>
+
+        <p id="page">This is Homepage</p>
+        <p id="welcome">Welcome here</p>
+        <p>Input: <input id="field" type="text" value="Comment"></p>
+
+        <button id="btn1">Set text</button>
+        <button id="btn2">Set HTML</button>
+        <button id="btn3">Set value</button>
+
+        <script>     // set
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("#page").text("Thanks for visiting us!");
+                });
+                $("#btn2").click(function(){
+                    $("#welcome").html("<b>Enjoy here</b>");
+                });
+                $("#btn3").click(function(){
+                    $("#field").val("Leave a comment");
+                });
+            });
+        </script>
+
+
+        <br><br><hr>
+
+
+        <footer style="background:#333; color: white;">
+
+           <div style="float: left; padding-left: 20px;">
+            <p>&copy; all right reserved</p>
+            <p>Na vizitoni n&euml; qendrat tona n&euml;: </p>
+          <select name="" id="" style="text-align: left; border-radius: 30px;">
+                    <option value="">Prishtin&euml;</option>
+                    <option value="">Prizren</option>
+                    <option value="">Gjakov&euml;</option>
+                </select> </div>
+                <div style="text-align: right; padding-right: 30px;" >
+                 <p style="padding-right: 50px;">You can follow us:</p>
+                <a href="https:/facebook.com"  class="fa fa-facebook"></a>
+                <a href="https:/instagram.com"  class="fa fa-instagram"></a>
+                </div>
+        
+        </footer>
+
+    </body>
+
+</html>

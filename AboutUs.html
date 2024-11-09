@@ -1,0 +1,286 @@
+<html>
+
+<head>
+
+
+    <title>AboutUs | Health and Beauty</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+
+    <script>
+       // alert("Warning!")
+       function validate(){
+       var name = document.getElementById('name')
+       var email = document.getElementById('email')
+       var password = document.getElementById('password')
+      if(name.value=="" || password.value=="" || email.value=="")
+    {
+    alert("no blank alowed");
+    return false;
+    }
+   else{
+    alert("Sent")
+  true;
+    }
+       }
+
+    </script>
+    <style>
+    
+    
+        .content{
+           margin: 0 300px 0 300px;
+           color: white;
+           font-size: 20px;
+           text-align: center;
+           padding-top: 6px;
+          
+        }
+        .contact{
+            color: white;
+            font-size: 20px;
+            float: left;
+            margin: 30px 300px 20px 200px;
+        }
+        .table{
+            width: 30%;
+            height: 50%;
+            padding: 40px;
+            margin: 40px 300px 70px 200px;
+            background: white;
+            
+        }
+    
+        .background{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.357),rgba(0, 0, 0, 0.357)), url(face\ products_images/f20.jpg);
+            background-size:cover ;
+            width: 100%;
+            height: 120%;
+        }
+        .table1 a{
+            color: darkblue;
+            text-decoration: none;
+        }
+        
+      .rotate:hover{
+          transform: rotateX(180deg);
+          font-size: 25px;
+      }
+
+          .fade{
+                border-radius: 30px;
+                margin: 20px 500px 20px 50px;
+                padding: 10px;
+                background-color:white;
+            }
+            .c1{
+                border-radius: 20px;
+                text-align: center;
+                background-color: brown;
+                padding: 5px;
+            }
+            .c2{
+                border-radius: 20px;
+                background-color: brown;
+                padding: 10px;
+            }
+      
+
+    </style>
+
+</head>
+
+
+<body style="background-color:rgb(214, 207, 207);">
+    
+    <article id="home"><u> <h1>Health and Beauty</u></h1></article>
+    <header>
+       <nav>
+            <ul align="right">
+                <li><a href="Homepage.html">Homepage</a></li>
+                <li><a href="AboutUs.html" >About Us</a></li>
+                <li><a href="BodyCare1.html" >Body Care</a></li>
+                <li><a href="FaceCare.html">Face Care</a></li>
+                <li><a href="HairProducts.html" >Hair Care</a></li>
+                <li><a href="Perfumes.html" >Perfumes</a></li>
+            </ul>
+            
+       </nav>
+       </header>
+       <br>
+       <div class="background">      
+      
+        <svg width="150" height="80" style="float: left;">
+            <rect rx="15" ry="15" x="25" y="25" width="100px" height="50px" fill="grey"></rect>
+        </svg>
+
+        <header class="content">
+       
+       <!-- <h3 style="background-color: grey;">About us</h3> -->
+       <h3 id="about" style="background-color: grey;"></h3>
+            <script>
+                document.getElementById("about").innerHTML="About Us";
+                document.getElementById("about").style.fontSize="25px";
+            </script>
+            <div class="rotate">About Us</div>
+        <p>For more you can contact us by email or phone which are listed below or visit us at our center.</p>
+        </header> <!-- class=content -->
+        
+
+        <div class="contact">
+        
+            <p align=center style="background-color:rgb(117, 114, 114);">Contact us:</p>
+            <address>
+           <p><b><i>Adress: </i></b><a style="color: white;" href="https://www.google.com/maps/place/Royal+MALL" target="_blank">Prishtin&euml;</a></p>
+            </address>
+           <p><b><i>Phone number: </i></b><u>+3834483748342</u></p>
+           <p><b><i>Email: </i></b><a style="color: white;" href="mailto:health&beauty@gmail.com">Email Us</a></p>
+        
+        </div> <!-- class=contact -->
+        
+        <table class="table">
+            <form id="form" action="" onsubmit="return validate()" method="get">
+               <tr><th align=left style="font-size: 20px; padding-bottom: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: grey;"><b>For more information leave your data here</b></th></tr>
+               <tr><td><label for="name">Full name</label></td></tr>
+               <tr><td><input id="name" type="text" required></td></tr>
+               <tr><td><label for="email">Email</label></td></tr>
+               <tr><td><input id="email" type="email" required></td></tr>
+               <tr><td><label for="password">Password</label></td></tr>
+               <tr><td><input id="password" type="password" required></td></tr>
+               <tr><td><textarea rows="3" style="resize: none; margin-top: 8px;"></textarea><span>Text a message</span></td></tr>
+               <tr><td><input type="submit"></td></tr>
+            </form>
+        </table> <!-- class=table -->
+        
+        <table class="table1" border="1" cellpadding="3px" align=left style="margin:-180px 0 0 200px; background-color: white;">
+            <caption style="background-color: rgb(117, 114, 114); color: aliceblue;">Similar Webpages: 
+            </caption>
+            <tr><td><a href="https://kyliecosmetics.com/en-us/kylie-skin"  target="_blank">Kylie Skin</a></td>
+                <td><a href="https://oriflame.com/" target="_blank">Oriflame</a></td>
+         </tr>
+         <tr>
+        <td><a href="https://www.victoriassecret.com/us/vs/beauty" target="_blank">Victoria's Secret</a></td>   
+               <td><a  href="https://www.bathandbodyworks.com/" target="_blank">Bath and Body Works</a></td>
+        </tr>
+        
+        </table> <!-- class=table1 -->
+        
+        </div>  <!-- class=background -->
+        <br> <hr> <br>
+    
+
+<h4>Our company was founded in:</h4>
+        <p id="demo"></p>
+
+<script>
+let x = 44;
+let z = Math.pow(x, 2);
+document.getElementById("demo").innerHTML=z;
+</script>
+
+
+<br><hr>
+
+<h4>That another center will open with the date:</h4>
+
+<p id="data"></p>
+<script>
+    const d=new Date(2022,02,15,10,30,00);
+    document.getElementById("data").innerHTML=d;
+</script>
+ 
+<p>Koordinatat e perdoruesit (Shtyp butonin per te dhenat)</p>
+<button onclick="getLocation()">Click</button>
+<p id="p1"></p>
+<script>
+    function getLocation() {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }
+    
+    function showPosition(position) {
+        document.getElementById("p1").innerHTML = "Gjeresia Gjeografike: " + position.coords.latitude +
+        " <br> Gjatesia Gjeografike: " + position.coords.longitude;
+    }
+    </script>
+
+
+
+<div class="fade">
+    <p class="c1">Health and beauty - wikipedia</p>
+    <p class="c2"> Health Beauty Life Magazine is a quarterly lifestyle magazine that's nationally distributed in 
+        print and available globally through HealthBeautyLife.com. The print magazine has a distribution of 80,000, 
+        with 50,000 certified direct mail, and 30,000 hand delivered nationwide. It is distributed to salons, spas and 
+        medical professional waiting rooms nationwide, and can be found on the newsstands of various national retailers 
+        such as Barnes & Noble and Books-a-Million. The print magazine features interactive QR coded articles that 
+        correspond with television episodes and video elements on HealthBeautyLife.com. The magazine's total reach is 
+        over 10 million readers. Past issues of the publication can be found online at ISSUU on the Health Beauty Life 
+        Magazine page.</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".fade").click(function(){
+                $(".c2").fadeToggle();
+            });
+        });
+    </script>
+
+
+
+
+<p>Count numbers: <output id="web"></output></p>      <!--  webworkers   -->
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+
+
+<script>
+var w;
+
+function startWorker() {
+ 
+    if(typeof(w) == "undefined") {
+      w = new Worker("webworkers.js");
+    }
+    w.onmessage = function(e) {
+      document.getElementById("web").innerHTML = e.data;
+    };
+  } 
+
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+}
+</script>
+
+
+
+
+
+
+
+        <footer style="  background:#333; color: white;">
+            <div style="float: left; padding-left: 20px; top: 0;">
+             <p>&copy; all right reserved</p>
+             <p>Na vizitoni ne qendrat tona ne: </p>
+           <select name="" id="" style="text-align: left; border-radius: 30px;">
+                     <option value="">Prishtin&euml;</option>
+                     <option value="">Prizren</option>
+                     <option value="">Gjakov&euml;</option>
+                 </select> </div>
+                 <div style="text-align: right; padding-right: 30px;" >
+                  <p style="padding-right: 50px;">You can follow us:</p>
+                 <a href="https:/facebook.com"  class="fa fa-facebook"></a>
+                 <a href="https:/instagram.com"  class="fa fa-instagram"></a>
+                 </div>
+       
+         </footer>
+
+
+</body>
+</html>

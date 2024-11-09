@@ -1,0 +1,261 @@
+<html>
+    <head>
+    <title>Face care | Health and Beauty</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+  
+  
+
+      .back_image h1{
+        border-start-end-radius:100px;
+        background-color: palevioletred;
+        margin:0px 300px 0px 300px;
+        font-size: 40px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+     .container{
+       background-color:rosybrown;
+        
+      }
+     .image{
+       width: 395px;
+       height: 370px;
+       padding:20px;
+       object-fit: cover;   
+     }
+  
+     .text{
+       padding: 10px;
+       margin: 10px 20px 20px 20px;
+       text-align: center;
+       font-family: 'Times New Roman', Times, serif;
+       background-color: hotpink;
+     }
+     .back_image{
+       width: 100%;
+       height: 100%;
+       background-image: linear-gradient(rgba(0, 0, 0, 0.357),rgba(0, 0, 0, 0.357)), url(face\ products_images/f7.jpeg);
+       background-size: cover;
+      }
+      #products{
+        border-radius: 100px;
+        background-color: hotpink;
+        margin-left: 400px;
+        margin-right: 400px;
+      }
+      .image:hover{
+        opacity: 0.5;
+        transition: .9s;
+      }
+    
+      .box{
+        resize:both;
+        overflow:auto;
+        word-wrap: break-word;
+        border: 2px solid white;
+        outline: 2px solid white;
+        outline-offset:20px;
+        margin:10px 100px 100px 800px;
+        padding: 20px;
+        font-size: 25px;
+        color:white;
+        animation-name: name;
+        animation-duration:8s;
+      }
+
+      @keyframes name{
+        0%{color:white;}
+        25%{color:pink;}
+        50%{color:purple;}
+        75%{color:blue;}
+        100%{color:green;}
+      }
+
+      td{
+        border: 2px solid white;
+      }
+     
+    </style>
+
+    </head>
+     
+    <body  style="background-color:rgb(214, 207, 207);">
+      <article id="home"><u> <h1>Health and Beauty</u></h1></article>
+      <header>
+         <nav>
+              <ul align="right">
+                  <li><a href="Homepage.html">Homepage</a></li>
+                  <li><a href="AboutUs.html" >About Us</a></li>
+                  <li><a href="BodyCare1.html" >Body Care</a></li>
+                  <li><a href="FaceCare.html">Face Care</a></li>
+                  <li><a href="HairProducts.html" >Hair Care</a></li>
+                  <li><a href="Perfumes.html" >Perfumes</a></li>
+              </ul>
+              
+         </nav>
+         </header>
+         <br>
+         <div class="background">
+
+      <div class="back_image">
+        <h1 align="center"><i>Face Care Products</i></h1>
+        <br>
+       
+        <br>
+        
+        <article>
+        <h5 style="margin-left: 100px; color:white;"><a style="color: white; text-decoration: none; font-size: 20px;" href="#products">Swipe to products</a></h5>
+        <h3 class="h3" style="color: white; font-size: 30px; text-shadow: 2px 1.5px violet; margin-left: 100px;"><big>Products contained on this page:</big></h3>
+      </article>
+
+        <ul class="ul" style="font-style:oblique; float: left; color: white; font-size: 30px; margin-left: 100px; list-style-type:circle;">
+            <li>Face cream</li>
+            <li>Face mask</li>
+            <li>Makeup products</li>
+            <ol style="font-size: 25px;">
+              <li>Lipstick</li>
+              <li>Foundation</li>
+              <li>Palette</li>
+            </ol>
+        </ul>
+
+        <script> //slide
+          $(document).ready(function(){
+            $(".h3").click(function(){
+              $(".ul").slideToggle();
+            });
+          });
+        </script>
+
+
+        <div class="box">Skin care is the range of practices that support skin integrity, enhance its appearance and relieve skin conditions. They can include nutrition, avoidance of excessive sun exposure and appropriate use of emollients.</div>
+       
+        
+        </div> <!-- class back_image -->
+   
+         <br>
+        
+         <div style="border-bottom: 3px double black;"></div>
+         <br>
+
+        
+<p align=center style="font-size: 30px;" id="products"><b><i>Products</i></b></p>
+
+<table class="container">
+  <tr>
+    <td><a href="face products_images/f1.jpg" target="_blank"><img class="image" src="face products_images/f1.jpg" alt="Face care image"/></a><p class="text">A makeup remover and face cleanser that virtually melts away all makeup, leaving the skin hydrated and silky</p></td>
+    <td><a href="face products_images/f2.jpg" target="_blank"><img class="image" src="face products_images/f2.jpg" alt="Face care image"/></a><p class="text">NEW from <b><mark style="background-color:cornflowerblue;">Hydro Boost</mark></b> is your complete hydration regime. Gel-cream and water-gel.</p></td>
+    <td><a href="face products_images/f3.jpg" target="_blank"><img class="image" src="face products_images/f3.jpg" alt="Face care image"/></a><p class="text"><b><mark style="background-color:darkmagenta;">Neutrogena Timeless Boost Hydrogel Recovery Mask </mark></b>helps reduces fine lines for a smoother skin.</p></td>
+  </tr>
+  <tr>
+    <td><a href="face products_images/f4.jpg" target="_blank"><img class="image" src="face products_images/f4.jpg" alt="Face care image"/></a><ul class="text" style="text-align: left; font-size: 15px;"><li>Remove melanin</li><li>Inhibit the generation of spots</li><li>Nourish skin</li></ul></td>
+    <td><a href="face products_images/f8.jpg" target="_blank"><img class="image" src="face products_images/f8.jpg" alt="Face care image"/></a><p class="text">The formula of this red lipstick is <b>soft and buttery, lasting all day </b>without settling into the cracks of your mouth</p></td>
+    <td><a href="face products_images/f9.jpg" target="_blank"><img class="image" src="face products_images/f9.jpg" alt="Face care image"/></a><p class="text"><b>Madison Palette </b>with many options to give you a bold eye look every time</p></td>
+  </tr>
+  <tr>
+    <td><a href="face products_images/f10.jpg" target="_blank"><img class="image" src="face products_images/f10.jpg" alt="Face care image"/></a><p class="text">Rub the applicator at the root of the lashes for a volumising, fluffy effect</p></td>
+    <td><a href="face products_images/f11.jpg" target="_blank"><img class="image" src="face products_images/f11.jpg" alt="Face care image"/></a><p class="text">Ideal for normal to dry skin types, this <b>skincare-infused foundation reduces the apperance of wrinkles </b></p></td>
+    <td><a href="face products_images/f12.jpg" target="_blank"><img class="image" src="face products_images/f12.jpg" alt="Face care image"/></a><p class="text">So <b>many shades </b>of makeup foundation</p></td>
+  </tr>
+
+</table>
+
+<section style="background-color: rgb(241, 136, 152);">
+<p style="font-size: 30px; margin-left: 20px;"><i>For which one of products in this page you are intereted more</i></p>
+<form style="margin-left: 20px;">
+<div><input id="cream" type="checkbox">
+<label for="cream" style="font-size: 25px;">Face cream</label></div>
+<div><input id="mask" type="checkbox">
+<label for="mask" style="font-size: 25px;">Face mask</label></div>
+<div><input id="makeup" type="checkbox">
+<label for="makeup" ><abbr  style="font-size: 22px;"  title="Make Up Products">MUP</abbr></label></div>
+<div><input style="margin:10px" type="submit" value="Submit"></div>
+</form>
+</section>
+
+<hr>
+
+<p><b>Creams which are useful for all skin types:</b></p>
+
+<p id="creams"></p>
+
+<script>
+const facecream = ["Hydrogen", "Olya", "Sturm", "Pund's"];
+document.getElementById("creams").innerHTML = facecream;
+</script>
+
+<hr>
+
+<p><b>Types of mask:</b></p>
+<p id="word"></p>
+<script>
+  var maska={
+   mask1:"Dry skin, ",
+   mask2:"Oily skin, ",
+   mask3:"All types of skin"
+  };
+  document.getElementById("word").innerHTML=maska.mask1 + "" + maska.mask2 + "" + maska.mask3;
+</script>
+
+<br><br>
+
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #d3d3d3;">
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient x=0, y=0 pika e fillimit, x=200 y=0 pika e fundit
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0.1,"red");
+grd.addColorStop(0.6,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,80,80);
+
+
+
+</script>
+
+
+
+<img id="s" width="220" height="277"
+src="s.jpg" alt=""></script>
+<canvas id="myCanvas">
+</canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var img = document.getElementById("s");
+ctx.drawImage(img);
+
+</script>
+<hr>
+<script src="script.js"></script>
+
+<footer style=" background: pink; background:#333; color: white;">
+  <div style="float: left; padding-left: 20px;">
+   <p>&copy; all right reserved</p>
+   <p>Na vizitoni ne qendrat tona ne: </p>
+ <select name="" id="" style="text-align: left; border-radius: 30px;">
+           <option value="">Prishtine</option>
+           <option value="">Prizren</option>
+           <option value="">Gjakove</option>
+       </select> </div>
+       <div style="text-align: right; padding-right: 30px;" >
+        <p style="padding-right: 50px;">You can follow us:</p>
+       <a href="https:/facebook.com"  class="fa fa-facebook"></a>
+       <a href="https:/instagram.com"  class="fa fa-instagram"></a>
+       </div>
+
+</footer>
+ </body>
+</html>

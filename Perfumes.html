@@ -1,0 +1,341 @@
+<html>
+<head>
+    <title>Perfumes | Health and Beauty</title>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .image h1{
+            border-start-end-radius: 100px;
+            background-color:violet;
+            margin: 0px 300px 0px 300px;
+            font-size: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+            
+       
+        .image{
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.357),rgba(0, 0, 0, 0.357)), url(perfumes_images/f9.jpeg);
+            background-size: cover;
+        }
+
+        .image1{
+       width: 395px;
+       height: 370px;
+       padding:20px;
+       object-fit: cover;   
+     }
+
+        .text1{
+       padding: 10px;
+       margin: 10px 20px 20px 20px;
+       text-align: center;
+       font-family: 'Times New Roman', Times, serif;
+       background-color: hotpink;
+       }
+
+       td{
+           border: 2px solid black;
+       }
+
+       td:hover{
+        transform:scale(1.1);
+       }
+
+       #products{
+          color: white;
+          font-size: 30px;
+          font-family:'Times New Roman', Times, serif;
+          text-shadow: 1px 2px blue;
+          border-radius: 20px;
+          background-color:orchid;
+          margin-left: 380px;
+          margin-right: 380px;
+          animation-name:example;
+          animation-duration:4s;
+        }
+        @keyframes example{
+            from{background-color:orchid;}
+            to{background-color:red;}
+        }
+
+        .box{
+                margin: 10px 820px 20px 50px;
+                border-radius:20px;
+                background-color: blue;
+                padding: 20px;
+                width:200px;
+                height:70px;
+            }
+            .p1{
+                text-align: center;
+                font-size: 15px;
+                font-weight: bold;
+                
+            }
+            .p2{
+                display: none;
+                text-align: left;
+                opacity:0;
+                font-size:14px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+    </style>
+
+</head>
+
+<body style="background-color:rgb(214, 207, 207);">
+    
+    <article id="home"><u> <h1>Health and Beauty</u></h1></article>
+    <header>
+       <nav>
+            <ul align="right">
+                <li><a href="Homepage.html">Homepage</a></li>
+                <li><a href="AboutUs.html" >About Us</a></li>
+                <li><a href="BodyCare1.html" >Body Care</a></li>
+                <li><a href="FaceCare.html">Face Care</a></li>
+                <li><a href="HairProducts.html" >Hair Care</a></li>
+                <li><a href="Perfumes.html" >Perfumes</a></li>
+            </ul>
+            
+       </nav>
+       </header>
+       <br>
+
+       <div style="border-bottom:3px double black"></div>
+       <br>
+
+      
+
+<div class="image">
+<h1 align=center><i>Perfumes products</i></h1>
+<br>
+
+ 
+<br>
+<br>
+
+
+<dl style="color: white; background-color:brown; margin: 70px 780px 10px 30px; ">
+    <dt style="padding-left:20px ;"><b><big>Some of the known perfumes firms that you can find at us:</big></b></dt>
+    <i><dd style="font-size: 20px;">Victoria's secret</dd>
+    <dd style="font-size: 20px;">Gucci bloom</dd>
+    <dd style="font-size: 20px;">Carolina Herrera</dd>
+    <dd style="font-size: 20px;">Si</dd>
+    <dd style="font-size: 20px;">Dior</dd> <br>
+    <dt><a href="#products" style="font-size: 20px; padding-left: 20px; color:white;">Swipe to products</a></dt>
+</i>
+
+</dl>
+
+<button id="btn" style="margin-left:30px;">Append list items</button>
+<button id="btnn">Prepend list items</button>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("dd").append("(perfume)");
+        });
+        $("#btnn").click(function(){
+            $("dd").prepend("(perfume)");
+        });
+    });
+</script>
+
+<!--  Ne te njejten menyre perdoren: before dhe after, te cilat e vendosin permbajtjen para (before) dhe mbrapa (after)
+elementit te selektuar    -->
+
+
+</div> <!-- tek class=image -->
+
+<br>
+<br>
+<div style="border-bottom: 3px double black;"></div>
+
+<br>
+<br>
+<p id="products" align="center">Produktet</p>
+
+<table class="main">
+    <tr>
+        <td><a href="perfumes_images/f1.jpeg " target="_blank" ><img class="image1" src="perfumes_images/f1.jpeg" alt="Perfume image"/></a><p class="text1"><b>Evidence </b>parfum</p></td>
+        <td><a href="perfumes_images/f2.jpeg" target="_blank"><img class="image1" src="perfumes_images/f2.jpeg" alt="Perfume image"/></a><p class="text1"><b>Victoria's secret</b></p></td>
+        <td><a href="perfumes_images/f6.jpeg" target="_blank"><img class="image1" src="perfumes_images/f6.jpeg" alt="Perfume image"/></a><p class="text1"><b>Si </b>passion</p></td>
+    </tr>
+    <tr>
+        <td><a href="perfumes_images/f4.jpeg" target="_blank"><img class="image1" src="perfumes_images/f4.jpeg" alt="Perfume image"/></a><p class="text1"><b>Olympea</b></p></td>
+        <td><a href="perfumes_images/f5.jpeg" target="_blank"><img class="image1" src="perfumes_images/f5.jpeg" alt="Perfume image"/></a><p class="text1"><b>Dior</b></p></td>
+        <td><a href="perfumes_images/f3.jpeg" target="_blank"><img class="image1" src="perfumes_images/f3.jpeg" alt="Perfume image"/></a><p class="text1"><b>Elie Saab</b></p></td> 
+    </tr>
+    <tr>
+        <td><a href="perfumes_images/f7.jpeg" target="_blank"><img class="image1" src="perfumes_images/f7.jpeg" alt="Perfume image"/></a><p class="text1"><b>Gucci bloom </b>- Ambrosia Di Fiori</p></td>
+        <td><a href="perfumes_images/f10.jpeg" target="_blank"><img class="image1" src="perfumes_images/f10.jpeg" alt="Perfume image"/></a><p class="text1"><b>Gucci bloom </b>- Acqua Di Fiori</p></td>
+        <td><a href="perfumes_images/f11.jpeg" target="_blank"><img class="image1" src="perfumes_images/f11.jpeg" alt="Perfume image"/></a><p class="text1"><b>Good Girl </b>- Carolina Herrera</p></td>
+    </tr>
+    </table>
+
+    <br><br><hr>
+
+    <p id="pg">Here find some types of <b>fragrances</b></p>
+    <button id="b1">Show text</button>
+    <button id="b2">Show HTML</button>
+
+    <script>     // get
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                alert("Text: " + $("#pg").text());
+            });
+            $("#b2").click(function(){
+                alert("HTML: " + $("#pg").html());
+            });
+        });
+    </script>
+
+    <br><br><hr>
+
+
+
+    <p><strong>The most sales products are:</strong></p>
+    <p id="sale"></p>
+    <script>
+        let x1="Gucci Bloom";
+        let x2="Si";
+        document.getElementById("sale").innerHTML=x1 + "<br>" + x2;
+  </script>
+
+    <hr>
+    <p><b>The number of their sales per day is:</b></p>
+    <p id="number"></p>
+
+  <script>
+        let y=500+"packages";
+        document.getElementById("number").innerHTML=y;
+    </script>
+
+<script src="script.js"></script>
+<br>
+
+
+<h4>Quantity of perfumes:</h4>
+
+<p id="forloop"></p>
+
+<script>
+let text = "";
+
+for (let i = 50; i < 250; i=i+50){
+  text += "The quantity: " + i + "ml" + "<br>";
+}
+
+document.getElementById("forloop").innerHTML = text;
+</script>
+
+
+
+
+<h4 style="font-style: italic;" id="tostring"></h4>
+
+<script>
+let mega = "Enjoy the beauty smell !";
+let result = mega.toString();
+
+document.getElementById("tostring").innerHTML = result; 
+</script>
+
+<div class="box">
+<p class="p1">Who first invented perfume?</p>
+<p class="p2">In the world history, the Egyptians were famous for producing perfumes throughout the ancient world. 
+They were formulated from plants and flowers before they could be added to other oils. It was later refined and 
+developed by Al-Shaykh al-Rais, a renowned physician who made a distinctive type of aromatic product.</p>
+</div>
+<script>    // animate
+    $(document).ready(function(){
+        $(".box").click(function(){
+            $(".box").animate({
+                width: '500px',
+                height:'200px'
+            }, 2000);
+            $(".p2").show().animate({
+                opacity:'0.7'
+            },3000);    // per 3 sec do te realizohet animacioni { opacity: '0.7' }
+            $(".p1").animate({
+                fontSize:'25px'
+            },3000);
+        });
+    });
+</script>
+
+<button id="remove" style="margin-left:25px;">Remove the div</button>
+<button id="empty">Empty the div</button>
+
+<script>    // remove and empty
+    $(document).ready(function(){
+        $("#remove").click(function(){
+            $(".box").remove();
+        });
+        $("#empty").click(function(){
+            $(".box").empty();
+        });
+    });
+</script>
+
+<br><hr>
+
+<p id="pp">Click the button below to hide this paragraph.</p>
+<button id="hide">Hide</button>
+<script>  // callback (realizohet pasi te perfundoj efekti, pra ne kete rast pasi te fshihet paragrafi del alert box-i)
+            $(document).ready(function(){
+                $("#hide").click(function(){                                       
+                    $("#pp").hide("slow", function(){
+                        alert("This paragraph is hidden!");
+                    });
+                });
+            });
+</script>
+
+
+<!--
+    <script>   // without callback (realizohet para efektit, pra se pari del alert pastaj fshihet pargrafi)
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("#pp").hide(1000);
+                        alert("This paragraph is hidden");
+                });
+            });
+            </script>
+-->
+
+
+
+<br><hr>
+
+
+
+
+
+<footer style=" background: pink; background:#333; color: white;">
+    <div style="float: left; padding-left: 20px;">
+     <p>&copy; all right reserved</p>
+     <p>Na vizitoni ne qendrat tona ne: </p>
+   <select name="" id="" style="text-align: left; border-radius: 30px;">
+             <option value="">Prishtine</option>
+             <option value="">Prizren</option>
+             <option value="">Gjakove</option>
+         </select> </div>
+         <div style="text-align: right; padding-right: 30px;" >
+          <p style="padding-right: 50px;">You can follow us:</p>
+         <a href="https:/facebook.com"  class="fa fa-facebook"></a>
+         <a href="https:/instagram.com"  class="fa fa-instagram"></a>
+         </div>
+ 
+ </footer>
+
+</body>
+
+
+
+</html>
